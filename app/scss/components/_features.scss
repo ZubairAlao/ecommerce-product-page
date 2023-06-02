@@ -1,0 +1,76 @@
+@use '../util' as u;
+.features {
+    &__container {
+        display: grid;
+        row-gap: u.rem(20);
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                margin: 0;
+                font-size: u.rem(32);
+            }
+
+            #colored {
+                background-color: var(--main-orange-pale);
+                padding: u.rem(10);
+                font-weight: 700;
+                color: var(--main-orange);
+            }
+        }
+        .right {
+            text-decoration: line-through;
+            color: var(--light-black);
+        }
+    }
+
+    .display-text {
+        font-weight: 700;
+        color: var(--main-orange);
+    }
+
+    &__cart-action {
+        display: flex;
+        flex-direction: column;
+        gap: u.rem(20);
+    }
+
+    &__add-cart {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--main-orange-pale);
+        padding: u.rem(15) u.rem(10);
+        border-radius: u.rem(10);
+        font-weight: 700;
+
+        #cart-minus {
+            cursor: pointer;
+        }
+
+        #cart-plus {
+            cursor: pointer;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: u.rem(20);
+        padding: u.rem(15) u.rem(10);
+        border-radius: u.rem(10);
+        color: var(--white);
+        background-color: var(--main-orange);
+        cursor: pointer;
+    }
+}

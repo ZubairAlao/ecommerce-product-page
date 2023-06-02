@@ -1,0 +1,59 @@
+@use '../util' as u;
+
+.hero {
+    cursor: pointer;
+
+    &__image {
+        background-image: url(/img/image-product-1.jpg);
+        max-width: u.rem(1000);
+        min-height: u.rem(300);
+        background-repeat: none;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__thumbnails {
+        .container {
+            max-width: u.rem(300);
+            display: flex;
+            justify-content: space-between;
+            gap: u.rem(10);
+            margin: 0;
+            padding: 0;
+            padding-top: u.rem(24);
+            
+            img {
+                border-radius: u.rem(10);
+                cursor: pointer;
+
+                &.active {
+                    border: 2px solid var(--main-orange);
+                    opacity: 0.5;
+                }
+                &:hover {
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+
+    &__icons {
+        background-color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--black);
+        width: u.rem(45);
+        height: u.rem(45);
+        padding: u.rem(15);
+        cursor: pointer;
+    }
+}

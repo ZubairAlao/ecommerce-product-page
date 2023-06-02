@@ -1,0 +1,73 @@
+@use '../util' as u;
+
+#main {
+    @include u.breakpoint(large) {
+        display: flex;
+        height: calc(100vh - u.rem(100));
+        width: calc(100% - u.rem(48));
+        max-width: u.rem(900);
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+
+        .hero__icons {
+            visibility: hidden;
+        }
+    }
+
+    article {
+        @include u.breakpoint(large) {
+            display: grid;
+            // justify-items: center;
+            align-items: center;
+            grid-template-columns: u.rem(350) 2fr;
+        }
+    }
+
+    .hero__image {
+        @include u.breakpoint(large) {
+            max-width: u.rem(300);
+            border-radius: u.rem(20);
+            min-height: u.rem(300);
+        }
+    }
+}
+
+.features {
+
+    &__intro {
+        @include u.breakpoint(large) {
+            h1 {
+                font-size: u.rem(32);
+            }
+        }
+    }
+
+    &__price {
+        @include u.breakpoint(large) {
+            flex-direction: column;
+            align-items: start;
+            gap: u.rem(10);
+        }
+    }
+
+    &__cart-action {
+        @include u.breakpoint(large) {
+            display: flex;
+            flex-direction: row;
+            gap: u.rem(20);
+        }
+    }
+
+    &__add-cart {
+        @include u.breakpoint(large) {
+            flex: 1;
+        }
+    }
+
+    &__submit {
+        @include u.breakpoint(large) {
+            flex: 1;
+        }
+    }
+}

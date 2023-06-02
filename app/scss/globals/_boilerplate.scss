@@ -1,0 +1,92 @@
+@use '../util' as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: u.$font;
+    background-color: var(--white);
+    color: var(--black);
+    margin-bottom: u.rem(50);
+
+    &.noscroll {
+      overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figure,
+blockquote {
+  margin: 0;
+}
+
+header ul,
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  &:focus {
+    left: 0;
+    height: auto;
+    width: auto;
+    background-color: #fff;
+    border: 1px solid;
+    padding: 0.5rem;
+  }
+}
+
+.hover-fade {
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.hide-for-desktop {
+  @include u.breakpoint(medium){
+    display: none;
+  }
+}
+
+.hide-for-mobile {
+  @include u.breakpoint-down(large){
+    display: none;
+  }
+}
+
+.overlay {
+
+  &.active {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: var(--light-black);
+    transition: transform 0.3s ease;
+  }
+}

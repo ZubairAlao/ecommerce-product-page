@@ -1,0 +1,64 @@
+@use '../util' as u;
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+    font-size: u.rem(32);
+    line-height: 1;
+    margin-bottom: u.rem(20);
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(64);
+    } 
+}
+
+h1 {
+    font-size: u.rem(32);
+    line-height: 1;
+    margin-bottom: u.rem(20);
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(64);
+    } 
+}
+
+h2 {
+    font-size: u.rem(24);
+    line-height: 1.1;
+    margin-bottom: u.rem(20);
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(32);
+    } 
+}
+
+h2 {
+    font-size: u.rem(18);
+    line-height: 1;
+    margin-bottom: u.rem(20);
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(24);
+    } 
+}
+
+p {
+    margin-top: 0;
+    font-size: u.rem(16);
+    line-height: 1.4;
+
+    @include u.breakpoint(large) {
+        font-size: u.rem(18);
+    } 
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}

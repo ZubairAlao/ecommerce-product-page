@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | E-commerce product page</title>
+    <link rel="stylesheet" href="./dist/style.css">
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body>
+    <a href="#main" class="visually-hidden">Skip to main content</a>
+    <header class="topnav">
+      <h2 class="visually-hidden">Header</h2>
+      <div class="container topnav__container">
+
+        <div class="topnav__left">
+
+          <a id="btnHamburger" href="#" class="topnav__toggle hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+
+          <a href="/" class="topnav__homelink hover-fade">
+            <img src="/img/logo.svg" 
+            alt="Sneaker homepage"
+            class="logo sm-mobile"
+            width="128"
+            height="36"
+            />
+          </a>
+  
+          <nav>
+            <ul class="topnav__links has-slide">
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Collections</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Men</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Women</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">About</a>
+              </li>
+              <li class="topnav__item">
+                <a href="" class="topnav__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="topnav__right">
+          <!-- <div id="item-count">0</div> -->
+          <a href="#" class="topnav__cart hover-fade">
+            <img src="/img/icon-cart.svg" 
+            alt="Sneaker cart"
+            class="topnav__cart"
+            width="25px"
+            height="25px"
+            />
+          </a>
+          <div class="topnav__checkout">
+            <h2>Cart</h2>
+            <div id="checkout-items">
+              <div id="empty-cart-message">
+                Your cart is empty
+              </div>
+            </div>
+            <div id="checkout" class="hover-fade">Checkout</div>
+          </div>
+          <a href="/" class="topnav__avatar hover-fade">
+            <img src="/img/image-avatar.png" 
+            alt="Sneaker image-avatar"
+            class=""
+            width="25px"
+            height="25px"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="overlay"></div>
+      <article>
+        <section class="hero">
+          <div class="hero__image">
+            <div class="container">
+              <img
+                src="/img/icon-previous.svg"
+                alt="icon prev"
+                class="hero__icons"
+                id="prev"
+                width="15"
+                height="15"
+              />
+              <img
+                src="/img/icon-next.svg"
+                alt="icon next"
+                class="hero__icons"
+                id="next"
+                width="15"
+                height="15"
+              /> 
+            </div>
+          </div>
+
+          <div class="hero__thumbnails hide-for-mobile">
+            <div class="container">
+              <img
+                src="/img/image-product-1-thumbnail.jpg"
+                alt="thumbnail1"
+                id="thumbnail1"
+                class="hero__thumbnail active"
+                width="60"
+                height="60"
+              />
+  
+              <img
+                src="/img/image-product-2-thumbnail.jpg"
+                alt="thumbnail2"
+                id="thumbnail2"
+                class="hero__thumbnail"
+                width="60"
+                height="60"
+              />
+  
+              <img
+                src="/img/image-product-3-thumbnail.jpg"
+                alt="thumbnail3"
+                id="thumbnail3"
+                class="hero__thumbnail"
+                width="60"
+                height="60"
+              />
+  
+              <img
+                src="/img/image-product-4-thumbnail.jpg"
+                alt="thumbnail4"
+                id="thumbnail4"
+                class="hero__thumbnail"
+                width="60"
+                height="60"
+              />
+            </div>
+          </div>     
+        </section>
+
+        <sections class="features">
+          <div class="features__container container">
+            <div class="features__intro">
+              <p class="display-text">Sneaker Company</p>
+              <h1>Fall Limited Edition Sneakers</h1>
+              <p>
+                These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.
+              </p>
+            </div>
+
+            <div class="features__price">
+              <span class="left">
+                <h2>$<span id="item-price">125.00</span></h2>
+                <span id="colored">50%</span>
+              </span>
+              <span class="right">$250.00</span>
+            </div>
+
+            <div class="features__cart-action">
+              <div class="features__add-cart">
+                <span><img src="./img/icon-minus.svg" alt="cart minus" id="cart-minus"></span><span id="item-number">0</span><span><img src="./img/icon-plus.svg" alt="cart plus" id="cart-plus"></span>
+              </div>
+  
+              <div class="features__submit hover-fade">
+                <img src="./img/icon-cart-white.svg" alt="cart">
+                <span>Add to cart</span>
+              </div>
+            </div>
+          </div>
+        </sections>
+
+      </article>
+    </main>
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+    <script src="./app/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@use '../util' as u;
+
+/* animation */
+// .has-slide {
+//     @include u.breakpoint-down(medium) {
+//         transform: translateX(-100%);
+//     } 
+// }
+
+// @keyframes slide-in {
+//     from {
+//         transform: translateX(-100%);
+//         opacity: 0;
+//     }
+//     1% {
+//         transform: translateX(0%);
+//         opacity: 0;
+//     }
+//     to {
+//         transform: translateX(0%);
+//         opacity: 1;
+//     }
+// }
+// .slide-in {
+//     animation: slide-in 200ms ease-in-out forwards;
+// }
+
+// @keyframes slide-out {
+//     from {
+//         transform: translate(0%);
+//         opacity: 1;
+//     }
+//     99% {
+//         transform: translateX(0%);
+//         opacity: 0;
+//       }
+//     to {
+//         transform: translateX(-100%);
+//         opacity: 0;
+//     }
+// }
+// .slide-out {
+//     animation: slide-out 200ms ease-in-out forwards;
+// }
+
+/* animation end */
