@@ -3,7 +3,8 @@
 #main {
     @include u.breakpoint(large) {
         display: flex;
-        height: calc(100vh - u.rem(100));
+        padding: u.rem(20);
+        // height: calc(100vh - u.rem(100));
         width: calc(100% - u.rem(48));
         max-width: u.rem(900);
         margin: 0 auto;

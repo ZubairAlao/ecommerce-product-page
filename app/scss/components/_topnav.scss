@@ -191,7 +191,7 @@
         }
 
 
-        @include u.breakpoint(small) {
+        @include u.breakpoint(medium) {
             width: 30%;
             right: 50%; 
             transform: translateX(55%); 
